@@ -1,0 +1,63 @@
+/* Estilos generales de la portada */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .portada {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+  }
+  
+  .imagen-fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: aparecer 3s ease-in-out forwards;
+  }
+  
+  .capa-bienvenida {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: aparecerTexto 5s ease forwards;
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  button#ingresar {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #f9e79f;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button#ingresar:hover {
+    background-color: #f1d564;
+  }
+  
+  @keyframes aparecer {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes aparecerTexto {
+    0% { opacity: 0; }
+    60% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  

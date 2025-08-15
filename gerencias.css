@@ -1,0 +1,187 @@
+/* Estilo similar al sitio buenosaires.gob.ar con enfoque institucional */
+
+/* Estilo para todas las Gerencias */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-nombre {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-header {
+    height: 50px;
+}
+
+.titulo-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu-superior {
+    display: flex;
+    gap: 15px;
+}
+
+.boton-menu {
+    padding: 10px 20px;
+    background-color: #f9e79f;
+    border: none;
+    border-radius: 6px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.boton-menu:hover,
+.boton-menu:focus-visible {
+    background-color: #f1d564;
+    outline: none;
+}
+
+.contenido-historia {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    background-color: #ffffff;
+}
+
+.contenido-historia h1 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #222;
+    border-bottom: 2px solid #f9e79f;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.contenido-historia h2 {
+    font-size: 1.6em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.recuadro-autoridades {
+    background-color: #f2f2f2;
+    border: 1px solid #9e5757;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.cuadro-sobrio {
+    background-color: #f9f9f9;
+    border: 1px solid #9e5757;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.grid-tramites {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-tramites a {
+    background-color: #f1f1f1;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin: 0;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.grid-tramites a:hover {
+    background-color: #f9e79f;
+  }
+  
+  /* Foco accesible para navegación con teclado */
+  .grid-tramites a:focus-visible {
+  outline: 3px solid #f0da84;
+  outline-offset: 3px;
+}
+
+footer {
+    margin-top: 60px;
+    background-color: #e5e5e5;
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .creditos {
+    font-size: 0.75em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .contenido-historia {
+      padding: 0 15px;
+    }
+  
+    .contenido-historia h1 {
+      font-size: 1.6em;
+    }
+  
+    .contenido-historia h2 {
+      font-size: 1.3em;
+    }
+  
+    .cuadro-sobrio {
+      width: 100%;
+    }
+  
+    .grid-tramites {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .boton-menu {
+      font-size: 0.9em;
+      padding: 8px 16px;
+    }
+}

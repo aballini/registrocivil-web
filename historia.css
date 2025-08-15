@@ -1,0 +1,187 @@
+/* Estilo similar al sitio buenosaires.gob.ar con enfoque institucional */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-nombre {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-header {
+    height: 50px;
+}
+
+.titulo-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu-superior {
+    display: flex;
+    gap: 15px;
+}
+
+.boton-menu {
+    padding: 10px 20px;
+    background-color: #f9e79f;
+    border: none;
+    border-radius: 6px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.boton-menu:hover {
+    background-color: #f1d564;
+}
+
+.contenido-historia {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    background-color: #ffffff;
+}
+
+.contenido-historia h1 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #222;
+    border-bottom: 2px solid #f9e79f;
+    padding-bottom: 10px;
+}
+
+.contenido-historia p {
+    font-size: 1.125em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.galeria-personalidades {
+    margin-top: 40px;
+}
+
+.galeria-personalidades h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.figura {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.figura:hover,
+.figura:focus-within {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.figura img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    max-height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.figura figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1em;
+    color: #444;
+}
+
+.galeria .figura a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 6px;
+}
+
+.galeria .figura a:focus-visible {
+    outline: 3px solid #f0da84;
+    outline-offset: 3px;
+}
+
+footer {
+    margin-top: 60px;
+    background-color: #e5e5e5;
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .creditos {
+    font-size: 0.75em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .contenido-historia {
+      padding: 0 15px;
+    }
+  
+    .contenido-historia h1 {
+      font-size: 1.6em;
+    }
+  
+    .contenido-historia p {
+      font-size: 1em;
+    }
+  
+    .boton-menu {
+      font-size: 0.9em;
+      padding: 8px 16px;
+    }
+  
+    .galeria {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+  
+    .figura figcaption {
+      font-size: 0.9em;
+    }
+}

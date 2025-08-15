@@ -1,0 +1,211 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  
+  /* Encabezado */
+  .encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo-nombre {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo-header {
+    height: 50px;
+  }
+  
+  .titulo-header {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .menu-superior {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .boton-menu {
+    padding: 10px 20px;
+    background-color: #f0da84;
+    border: none;
+    border-radius: 6px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .boton-menu:hover {
+    background-color: #eec936;
+  }
+  
+  /* Portada */
+  .portada-principal {
+    width: 100%;
+    overflow: hidden;
+    height: 350px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .imagen-portada {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 0;
+  }
+  
+  .portada-principal::after {
+    content: "Sitio Registro Civil de la Ciudad de Buenos Aires";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .seccion-gerencias {
+    padding: 60px 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    animation: fadeInUp 1.2s ease both;
+  }
+  
+  .seccion-gerencias h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .cuadros-gerencias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .cuadro-gerencia {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #444;
+    transition: transform 0.3s ease;
+  }
+  
+  .cuadro-gerencia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+
+  .novedades {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.novedades h2 {
+  font-size: 1.8em;
+  color: #222;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #f9e79f;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.lista-novedades {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item-novedad {
+  background-color: #f1f1f1;
+  padding: 15px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.05em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #f9e79f;
+  transition: background-color 0.3s;
+}
+
+.item-novedad:hover {
+  background-color: #f9e79f;
+}
+
+.item-novedad .nuevo {
+  background-color: #d4efdf;
+  color: #196f3d;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.item-novedad .nuevo i {
+  font-size: 0.85em;
+} 
+
+  /* Footer */
+  footer {
+    margin-top: auto;
+    background-color: #e5e5e5;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #333;
+    border-top: 1px solid #ccc;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer .creditos {
+    font-size: 0.75em;
+    color: #666;
+  }
+  
