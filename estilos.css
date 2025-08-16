@@ -134,6 +134,74 @@ body, html {
     box-shadow: 0 6px 16px rgba(0,0,0,0.15);
   }
 
+/* Section Accesos */  
+.accesos-diarios {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.accesos-diarios h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f9e79f;
+    padding-bottom: 10px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accesos-diarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.accesos-diarios .acceso {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px auto;
+    max-width: 300px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.acceso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.acceso strong {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.acceso span {
+    font-size: 0.95em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .accesos-diarios .acceso {
+        max-width: 100%;
+    }
+
+    .accesos-diarios h2 {
+        font-size: 1.4em;
+    }
+}
+
+/* Section Novedades */
   .novedades {
   max-width: 1000px;
   margin: 60px auto;
@@ -208,4 +276,5 @@ body, html {
     font-size: 0.75em;
     color: #666;
   }
+
   
